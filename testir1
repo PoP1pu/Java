@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class Main
+{
+public static void main(String[] args) {
+System.out.println("Введите сторону a первого конверта:");
+Scanner sc = new Scanner(System.in);
+if (sc.hasNextInt()) {
+int a = sc.nextInt();
+System.out.println("Введите сторону b первого конверта:");
+if (sc.hasNextInt()) {
+int b = sc.nextInt();
+System.out.println("Введите сторону c второго конверта:");
+if (sc.hasNextInt()) {
+int c = sc.nextInt();
+System.out.println("Введите сторону d второго конверта:");
+if (sc.hasNextInt()) {
+int d = sc.nextInt();
+System.out.println("Стороны первого конверта: "+a+" и "+b+" .");
+System.out.println("Стороны второго конверта: "+c+" и "+d+" .");
+int x1 = a*b;
+System.out.println("Площадь первого прямоугольника: "+x1);
+int x2 = c*d;
+System.out.println("Площадь второго прямоугольника: "+x2);
+if (x1==x2)
+{
+System.out.println("Результат:");
+System.out.println("Площади прямоугольников равны");
+}
+else if (x1>x2)
+{
+System.out.println("Результат:");
+System.out.println("Площадь первого прямоугольника больше второго");
+}
+else
+{
+System.out.println("Результат:");
+System.out.println("Площадь второго прямоугольника больше первого");
+}
+
+}
+else {System.out.println("Ошибка");}
+}
+else {System.out.println("Ошибка");}
+}
+else {System.out.println("Ошибка");}
+}
+else {System.out.println("Ошибка");}
+}
+}
